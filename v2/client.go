@@ -456,6 +456,14 @@ func (c *Client) NewListSavingsFlexibleProductsService() *ListSavingsFlexiblePro
 func (c *Client) NewListCustomizedAndFixedProductsService() *ListCustomizedAndFixedProductsService {
 	return &ListCustomizedAndFixedProductsService{c: c}
 }
+
+func (c *Client) NewListLiquidSwapProductsService() *ListLiquidSwapProductsService {
+	return &ListLiquidSwapProductsService{c: c}
+}
+func (c *Client) NewLiquidSwapProductsService() *LiquidSwapProductsService {
+	return &LiquidSwapProductsService{c: c}
+}
+
 // NewPurchaseSavingsFlexibleProductService purchase a flexible product (Savings)
 func (c *Client) NewPurchaseSavingsFlexibleProductService() *PurchaseSavingsFlexibleProductService {
 	return &PurchaseSavingsFlexibleProductService{c: c}
